@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="icon.png" rel="icon" type="image/png">
+
+      
+    <title>تواريخ الوحدة الثانية</title>
+
+   
+  </head>
+  <body>
+    <div class="main-div">
+        <div class="quiz-app">
+        <div class="start" id="start" style="display: block;">
+        <img src="icon.png" height="120px" width="120px" class="il"/>
+        <h1 class="app"> تواريخ الوحدة الثانية</h1>
+        
+        </div>
+          <div class="quiz" id="quiz-secreen" style="display:none;">          
+            <div class="time-bar">
+            <div class="time-left" id="timeLeft">
+            
+            </div>
+          </div>
+          <div class="question-no">
+            <h3 class="q-text"> سؤال <span id="currentQuestion"> 1</span> / <span id="totalQuestions"> 10</span></h3>
+            <h3 id="dots">.............................................................</h3>
+       </div>
+          <div class="qus">
+            <h1 id="question"> </h1>
+
+          </div>
+          <div class="choices">
+            <button class="btn" id="opt1"></button>
+            <button class="btn" id="opt2"></button>
+            <button class="btn" id="opt3"></button>
+            <button class="btn" id="opt4"></button>
+          </div>
+          
+        </div>
+        <div class="result" id="resultSecreen" style="display: none;">
+           <img src="icon.png" height="120px" width="120px" class="il"/>
+        <h1 class="app"> Score : <span id="score">6</span></h1>
+       
+
+
+
+        </div>
+        </div>
+
+        <div class="social-icons">
+           
+            <a href="index.html" class="transition-link" ><i class="fa-solid fa-house" style="color: #333333; "></i></a>
+            <a href="wi7da2.html" class="transition-link" ><i class="fa-solid fa-arrows-rotate" style="color: #333333;"></i></a>
+            <a href="#####"  ><i class="fa-solid fa-download" style="color: #333333;"></i></a>
+          </div>
+          
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll(".transition-link");
+      
+          links.forEach(link => {
+              link.addEventListener("click", function (event) {
+                  event.preventDefault(); 
+                  document.body.classList.add("fade-out");
+                  setTimeout(() => {
+                      window.location.href = link.href;
+                  }, 500); 
+              });
+          });
+      });
+      </script>
+      
+   
+  </body>
+</htm>
