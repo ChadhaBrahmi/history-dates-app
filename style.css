@@ -4,7 +4,7 @@ body {
   background: linear-gradient(135deg, #E4E0E1, #D6C0B3);
   background-size: 200% 200%;
   animation: gradientMove 6s infinite alternate;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   transition: opacity 0.5s ease-in-out;
   position: relative;
