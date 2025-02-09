@@ -252,3 +252,14 @@ body.fade-out {
   width: 100%;
   justify-content: center;
 }
+
+@media (max-width: 445px) {
+  .social-icons {
+    bottom: 100px;
+  }
+
+  .app {
+    font-size: 30px;
+  }
+}
+
